@@ -37,7 +37,11 @@
                         <td bgcolor="#B22222" width="5"></td>
                         <td width="5"></td>
                         <td>
+                            {% if message.to == request.user %}
                             <font color="{{ message.user.nik_color }}">Приватное от {{ message.user.username }}:</font>
+                            {% else %}
+                            <font color="{{ message.to.nik_color }}">Приватное {{ message.to.username }}:</font>
+                            {% endif %}
                             <font color="{{ message.user.msg_color }} }}">{{ message.message }}</font><br>
                         </td>
                     </tr>
