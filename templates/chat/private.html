@@ -1,0 +1,46 @@
+{% load static errors_extras %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <SCRIPT type="javascript">
+        <!--
+        function initial() {
+            {% if not form.non_field_errors and not form.message.errors and not form.to.errors %}
+                window.parent.frames['message'].document.location.href = '{% url 'message' %}';
+            {% endif %}
+        }
+        //-->
+    </SCRIPT>
+</head>
+<body text="#b8826d" vlink="#8a543f" alink="#ffffff" link="#ffff00" bgcolor="#000000"
+      background="{% static 'images/bg_right.gif' %}" onload="initial()">
+<center><font size="2"><b><i>ПРИВАТНОЕ СООБЩЕНИЕ</i></b>
+    <p align="justify">Выберите ник заключенного, которому вы хотите отправить
+        сообщение и нажмите "Enter". </p></font>
+    {% if form.non_field_errors or form.message.errors or form.to.errors %}
+    <p>
+        {% for non_field_error in form.non_field_errors %}
+            <font color="red">{{ non_field_error|escape }}</font><br>
+        {% endfor %}
+        {% for error in form.message.errors %}
+            <font color="red">{{ error|escape }}</font><br>
+        {% endfor %}
+        {% for error in form.to.errors %}
+            <font color="red">{{ error|escape }}</font><br>
+        {% endfor %}
+    </p>
+    {% endif %}
+    <center>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.to }}
+            <br><br>
+            {{ form.message }}
+            <br><br>
+            <input type="image" src="{% static 'images/w_enter.gif' %}" border="0">
+            <a href="{% url 'message' %}" target="message"><img src="{% static 'images/w_obn.gif' %}" border="0"></a>
+        </form>
+    </center>
+</center>
+</body>
+</html>
