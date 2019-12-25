@@ -3,6 +3,7 @@
 ![](https://github.com/arsensokolov/castle-if.ru/blob/master/static/images/ban_castle.jpeg?raw=true)
 
 ![Website](https://img.shields.io/website?url=http%3A%2F%2Fcastle-if.ru)
+![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/arsensokolov/castle-if.ru)
 
 Это не оригигнальный код чата, это написанный полностью с нуля. Я постарался восстановить первозданный вид чата,
 но чувствую, не все я вспомнил как оно было и не все получилось сделать аутентично.
