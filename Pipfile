@@ -11,6 +11,7 @@ django-colorfield = "*"
 django-admin-sortable2 = "*"
 pyyaml = "*"
 djantimat = {git = "git://github.com/arsensokolov/djantimat.git"}
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"

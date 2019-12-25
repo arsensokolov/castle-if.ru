@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "1225333238012069f8c453f25463bb7fcaab502aa87458fe743ecfa72d3d015a"
+            "sha256": "ba9d5b61521b37b4eb8790141c1f27b0e6cebaf226395b12b9e8baae2da2fbc4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -48,6 +48,14 @@
         "djantimat": {
             "git": "git://github.com/arsensokolov/djantimat.git",
             "ref": "e4d7bb4680b4b7a88ba0e4147ae6102327a94b6b"
+        },
+        "gunicorn": {
+            "hashes": [
+                "sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626",
+                "sha256:cd4a810dd51bf497552cf3f863b575dabd73d6ad6a91075b65936b151cbf4f9c"
+            ],
+            "index": "pypi",
+            "version": "==20.0.4"
         },
         "pytz": {
             "hashes": [
