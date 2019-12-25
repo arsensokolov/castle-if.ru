@@ -1,0 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Замок IF</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    {% block in-head %}{% endblock %}
+</head>
+{% block body %}
+    <body bgcolor="#000000" text="#b8826d" link="#ffff00" vlink="#8A543F" alink="#ffffff"
+          onload="{% block onload %}{% endblock %}">
+    {% block in-body %}{% endblock %}
+    </body>
+{% endblock %}
+</html>

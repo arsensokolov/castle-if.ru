@@ -1,0 +1,13 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv=refresh content="60">
+</head>
+<body text="#b8826d" vlink="#8a543f" alink="#ffffff" link="#ffff00" bgcolor="#000000"
+      background="{% static 'images/bg_time.gif' %}" marginwidth="0" marginheight="0">
+<center><font size="2"><b>{{ request.room.name }} камера, сейчас: {% now 'l, j F Y G:i' %}</b>
+</font></center>
+
+</body>
+</html>

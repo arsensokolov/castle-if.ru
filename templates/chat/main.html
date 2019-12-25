@@ -1,0 +1,15 @@
+<html>
+<head><title>Замок IF</title></head>
+<frameset cols="*,200" border="0" frameborder="0" framespacing="0">
+    <frameset rows="52,22,*,49">
+        <frame src="{% url 'top' %}" marginwidth=0 marginheight=0 scrolling=no>
+        <frame src="{% url 'time' %}" marginwidth=0 marginheight=0 scrolling=no name=time>
+        <frame src="{% url 'message' %}" name=message>
+        <frame src="{% url 'ctrl' %}" marginwidth=0 marginheight=0 scrolling=no name=ctrl>
+    </frameset>
+    <frameset rows="60,*">
+        <frame src="{% url 'menu' %}" marginwidth=0 marginheight=0 scrolling=no>
+        <frame src="{% url 'users' %}" marginwidth=7 marginheight=3 scrolling=auto name="right">
+    </frameset>
+</frameset>
+</html>

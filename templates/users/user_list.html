@@ -1,0 +1,29 @@
+{% load static %}
+<html>
+<head>
+    <meta http-equiv=refresh content="60">
+</head>
+<body bgcolor="#000000" background="{% static 'images/bg_right.gif' %}" text="#b8826d" link="#b8826d" vlink="#b8826d"
+      alink="#b8826d">
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
+<center><font size=2><b><i>СПИСОК ЗАКЛЮЧЕННЫХ</i></b></font></center>
+<br>
+<p>
+    {% for object in object_list %}
+        {% if object.is_sleep %}
+            <img src="{% static 'images/away.gif' %}">
+        {% else %}
+            <img src="{% static 'images/online.gif' %}">
+        {% endif %}
+        <font size="2">
+            <a href="javascript:parent.frames['ctrl'].fu('{{ object.username }}')">{{ object.username }}</a>
+        </font>
+        <br>
+    {% endfor %}
+</p>
+</body>
+</html>

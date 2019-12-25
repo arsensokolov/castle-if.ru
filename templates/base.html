@@ -1,0 +1,22 @@
+{% extends 'base_tiny.html' %}
+{% load static %}
+
+{% block in-body %}
+    <center>
+        <img src="{% static 'images/castle.gif' %}">
+        <br><br>
+        <img src="{% static 'images/twoline.gif' %}">
+        <br>
+        <table width="292" bgcolor="#3F261D" cellpadding="9" cellspacing="0" border="0">
+            <tbody>
+            <tr>
+                <td>
+                    {% block content %}{% endblock %}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <img src="{% static 'images/twoline.gif' %}">
+        <br><br>
+    </center>
+{% endblock %}

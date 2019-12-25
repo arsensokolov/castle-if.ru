@@ -1,0 +1,294 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <center>
+        <font size="2">
+            <b>
+                <i>РЕГИСТРАЦИЯ</i>
+            </b>
+        </font>
+    </center>
+    <font size="2">
+        <p align="justify">
+            Для регистрации в "Замке" Вам необходимо заполнить ВСЕ поля предлагаемой формы, помеченнные "*" . Позднее Вы
+            сможете изменить эти данные нажав в меню замка кнопку "настройки пользователя".
+        </p>
+        {% if form.non_field_errors %}
+            {% for non_field_error in form.non_field_errors %}
+                <p><font color="red">{{ non_field_error|escape }}</font></p>
+            {% endfor %}
+        {% endif %}
+    </font>
+    <form action="" method="post">
+        {% csrf_token %}
+        <br>
+        <p>
+        <table cellpadding="7">
+            <tbody>
+            <tr>
+                <td>
+                    <font size="2">(*)Ник:</font>
+                </td>
+                <td>
+                    {{ form.username }}
+                </td>
+            </tr>
+            {% if form.username.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.username.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">(*)Пароль:</font>
+                </td>
+                <td>
+                    {{ form.password1 }}
+                </td>
+            </tr>
+            {% if form.password1.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.password1.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">(*)Повтор пароля:</font>
+                </td>
+                <td>
+                    {{ form.password2 }}
+                </td>
+            </tr>
+            {% if form.password2.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.password2.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">Цвет ника:</font>
+                </td>
+                <td>
+                    {{ form.nik_color }}
+                </td>
+            </tr>
+            {% if form.nik_color.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.nik_color.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">Цвет сообщений:</font>
+                </td>
+                <td>
+                    {{ form.msg_color }}
+                </td>
+            </tr>
+            {% if form.msg_color.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.msg_color.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">Время обновления:</font>
+                </td>
+                <td>
+                    {{ form.refresh_time }}
+                </td>
+            </tr>
+            {% if form.refresh_time.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.refresh_time.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">Число строк:</font>
+                </td>
+                <td>
+                    {{ form.total_lines }}
+                </td>
+            </tr>
+            {% if form.total_lines.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.total_lines.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">Показ смайлов:</font>
+                </td>
+                <td>
+                    {{ form.show_smiles }}
+                </td>
+            </tr>
+            {% if form.show_smiles.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.show_smiles.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">Вкл. Java-script:</font>
+                </td>
+                <td>
+                    {{ form.js_on }}
+                </td>
+            </tr>
+            {% if form.js_on.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.js_on.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">Показ аватар (картинка вместо ника):</font>
+                </td>
+                <td>
+                    {{ form.show_avatar }}
+                </td>
+            </tr>
+            {% if form.show_avatar.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.show_avatar.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">E-mail:</font>
+                </td>
+                <td>
+                    {{ form.email }}
+                </td>
+            </tr>
+            {% if form.email.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.email.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td>
+                    <font size="2">ICQ UIN:</font>
+                </td>
+                <td>
+                    {{ form.icq_uin }}
+                </td>
+            </tr>
+            {% if form.icq_uin.errors %}
+                <tr>
+                    <td></td>
+                    <td>
+                        <font color="red" size="2">
+                            {% for error in form.icq_uin.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            <tr>
+                <td colspan="2">
+                    <font size="2">Немного о себе:</font><br>
+                    {{ form.about }}
+                </td>
+            </tr>
+            {% if form.about.errors %}
+                <tr>
+                    <td colspan="2">
+                        <font color="red" size="2">
+                            {% for error in form.about.errors %}
+                                {{ error|escape }}<br>
+                            {% endfor %}
+                        </font>
+                    </td>
+                </tr>
+            {% endif %}
+            </tbody>
+        </table>
+        </p>
+        <center>
+            <br><br>
+            <input type="image" src="{% static 'images/k_enter.gif' %}" value="Sent" border="0">
+        </center>
+    </form>
+{% endblock %}

@@ -1,0 +1,7 @@
+- model: chat.room
+  pk: 1
+  fields:
+    name: Основная
+    slug: general
+    is_private: false
+    my_order: 1

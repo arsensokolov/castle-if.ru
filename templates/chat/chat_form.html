@@ -1,0 +1,51 @@
+{% load static errors_extras %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+    <style>
+        n {
+            font: 20px Tahoma;
+        }
+    </style>
+    <SCRIPT language=javaScript>
+        <!--
+        function fu(nick) {
+            document.forms['message'].message.value = document.forms['message'].message.value + nick + ', ';
+            document.forms['message'].message.focus();
+        }
+        function initial() {
+            {% if form.non_field_errors %}alert('{{ form.non_field_errors|list_commas }}');{% endif %}
+            {% if form.message.errors %}alert('{{ form.message.errors|list_commas }}');{% endif %}
+            document.forms['message'].message.value = '';
+            document.forms['message'].message.focus();
+            {% if not form.non_field_errors and not form.message.errors %}
+                window.parent.frames['message'].document.location.href = '{% url 'message' %}';
+            {% endif %}
+        }
+        //-->
+    </SCRIPT>
+</HEAD>
+<BODY text="#b8826d" vLink="#8a543f" aLink="#ffffff" link="#ffff00" bgColor="#3f261d" onload="initial()">
+<CENTER>
+    <FORM method="post" name="message">
+        {% csrf_token %}
+        <TABLE height=40 cellSpacing=5 cellPadding=0 width="100%">
+            <TBODY>
+            <TR>
+                <TD width="50" valign="middle">
+                    {{ form.message }}
+                </TD>
+                <TD valign="middle">
+                    <INPUT type="image" alt="Отправить" src="{% static 'images/k_enter.gif' %}" value="Send">
+                    <a href="{% url 'message' %}" target="message">
+                        <IMG alt="Обновить" src="{% static 'images/k_obn.gif' %}" border="0"></a>
+                    <a href="{% url 'users' %}" target="right">
+                        <IMG alt="Статус" src="{% static 'images/k_status.gif' %}" border="0"></a>
+                </TD>
+            </TR>
+            </TBODY>
+        </TABLE>
+    </FORM>
+</CENTER>
+</BODY>
+</HTML>
