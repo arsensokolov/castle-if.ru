@@ -29,6 +29,7 @@
 
 ```bash
 $ git clone https://github.com/arsensokolov/castle-if.ru.git
+$ cd castle-if.ru/
 ```
 
 Установим зависимости (Pipenv уже должен быть установлен на сервере):
