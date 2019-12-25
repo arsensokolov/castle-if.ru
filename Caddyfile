@@ -1,0 +1,7 @@
+castle-if.ru {
+    root /home/ec2-user/castle-if.ru
+    proxy / localhost:8000 {
+        transparent
+    }
+    tls off
+}
