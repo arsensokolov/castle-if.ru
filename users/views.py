@@ -2,7 +2,7 @@ from django.contrib.auth import login
 from django.http import HttpResponseRedirect
 from django.views import generic
 from django.contrib.auth.views import LoginView, LogoutView
-
+from chat.models import Chat
 from .models import User
 from .forms import RegisterForm
 
@@ -15,6 +15,7 @@ class LoginPage(LoginView):
         if self.request.user.is_authenticated:
             self.request.user.is_offline = False
             self.request.user.save()
+            Chat.objects.create(user=self.request.user, message_type=Chat.USER_LOGIN)
         return HttpResponseRedirect(self.get_success_url())
 
 
@@ -22,6 +23,7 @@ class LogoutPage(LogoutView):
     def dispatch(self, request, *args, **kwargs):
         self.request.user.is_offline = True
         self.request.user.save()
+        Chat.objects.create(user=self.request.user, message_type=Chat.USER_LOGOUT)
         return super(LogoutPage, self).dispatch(request, *args, **kwargs)
 
 

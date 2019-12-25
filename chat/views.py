@@ -1,3 +1,4 @@
+from django.db.models import Q
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views import generic
 from .models import Chat
@@ -25,7 +26,10 @@ class ChatList(LoginRequiredMixin, generic.ListView):
     template_name = 'chat/message.html'
 
     def get_queryset(self):
-        return self.model.objects.filter(room=self.request.room)[:int(self.request.user.total_lines)]
+        return self.model.objects.filter(
+            Q(room=self.request.room) |
+            Q(room__isnull=True)
+        )[:int(self.request.user.total_lines)]
 
 
 class AddMessage(LoginRequiredMixin, generic.CreateView):

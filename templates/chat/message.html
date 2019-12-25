@@ -9,8 +9,30 @@
 </head>
 <body bgcolor=black>
 {% for message in object_list %}
-    <a href="javascript:parent.frames['ctrl'].fu('{{ message.user.username }}')">
-        <font color="{{ message.user.nik_color }}"><b>{{ message.user.username }}:</b></font>
-    </a>
-    <font color="{{ message.user.msg_color }} }}">{{ message.message }}</font><br>
+    {% if message.message_type != 1 %}
+        <table width="100%" border="0">
+            <tbody>
+            <tr>
+                <td width="35%"></td>
+                <td valign="top"><font face="arial" color="#b8826d" size="-2"><b>Стражник:</b></font></td>
+                <td align="left" width="65%">
+                    <font face="arial" color="#b8826d" size="-2">
+                        &nbsp;
+                        {% if message.message_type == 2 %}
+                            Заключенный {{ message.user.username }} доставлен в замок
+                            {{ message.created_at|date:'H:i' }}
+                        {% elif message.message_type == 3 %}
+                            {{ message.user.username }} сбежал из замка {{ message.created_at|date:'H:i' }}
+                        {% endif %}
+                    </font>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    {% else %}
+        <a href="javascript:parent.frames['ctrl'].fu('{{ message.user.username }}')">
+            <font color="{{ message.user.nik_color }}"><b>{{ message.user.username }}:</b></font>
+        </a>
+        <font color="{{ message.user.msg_color }} }}">{{ message.message }}</font><br>
+    {% endif %}
 {% endfor %}
