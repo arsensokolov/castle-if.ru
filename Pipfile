@@ -12,6 +12,7 @@ django-admin-sortable2 = "*"
 pyyaml = "*"
 djantimat = {git = "git://github.com/arsensokolov/djantimat.git"}
 gunicorn = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.7"

@@ -1,3 +1,4 @@
+{% load chat_extras %}
 <html>
 <head>
     <meta http-equiv=refresh content="{{ request.user.refresh_time }}">
@@ -38,11 +39,28 @@
                         <td width="5"></td>
                         <td>
                             {% if message.to == request.user %}
-                            <font color="{{ message.user.nik_color }}">Приватное от {{ message.user.username }}:</font>
-                            <font color="{{ message.user.msg_color }} }}">{{ message.message }}</font><br>
+                                <font color="{{ message.user.nik_color }}">
+                                    Приватное от {{ message.user.username }}:
+                                </font>
+                                <font color="{{ message.user.msg_color }} }}">
+                                    {% if request.user.show_smiles %}
+                                        {{ message.message|show_smile }}
+                                    {% else %}
+                                        {{ message.message }}
+                                    {% endif %}
+                                </font>
+                                <br>
                             {% else %}
-                            <font color="{{ message.to.nik_color }}">Приватное {{ message.to.username }}:</font>
-                            <font color="{{ message.to.msg_color }} }}">{{ message.message }}</font><br>
+                                <font color="{{ message.to.nik_color }}">
+                                    Приватное {{ message.to.username }}:
+                                </font>
+                                <font color="{{ message.to.msg_color }} }}">
+                                    {% if request.user.show_smiles %}
+                                        {{ message.message|show_smile }}
+                                    {% else %}
+                                        {{ message.message }}
+                                    {% endif %}
+                                </font><br>
                             {% endif %}
                         </td>
                     </tr>
@@ -53,7 +71,13 @@
             <a href="javascript:parent.frames['ctrl'].fu('{{ message.user.username }}')">
                 <font color="{{ message.user.nik_color }}"><b>{{ message.user.username }}:</b></font>
             </a>
-            <font color="{{ message.user.msg_color }} }}">{{ message.message }}</font><br>
+            <font color="{{ message.user.msg_color }} }}">
+                {% if request.user.show_smiles %}
+                    {{ message.message|show_smile }}
+                {% else %}
+                    {{ message.message }}
+                {% endif %}
+            </font><br>
         {% endif %}
     {% endif %}
 {% endfor %}

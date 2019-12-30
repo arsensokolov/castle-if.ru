@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.utils import timezone
-
+from django.utils.safestring import mark_safe
 
 class Room(models.Model):
     name = models.CharField('название камеры', max_length=60)
@@ -54,8 +54,8 @@ class Chat(models.Model):
 
     class Meta:
         ordering = ['-created_at']
-        verbose_name = 'чат'
-        verbose_name_plural = 'чаты'
+        verbose_name = 'сообщение'
+        verbose_name_plural = 'сообщения'
 
     def __str__(self):
         if self.message_type == self.USER_LOGIN:
@@ -69,3 +69,21 @@ class Chat(models.Model):
                 self.user.username
             )
         return '[{}] {}: {}'.format(self.created_at, self.user.username, self.message)
+
+
+class Smile(models.Model):
+    code = models.CharField('комбинация символов', max_length=18)
+    smile = models.ImageField('картинка', upload_to='smile')
+    my_order = models.PositiveIntegerField('сортировка', default=0)
+
+    class Meta:
+        ordering = ['my_order']
+        verbose_name = 'смайл'
+        verbose_name_plural = 'смайлы'
+
+    def __str__(self):
+        return self.code
+
+    def smile_preview(self):
+        return mark_safe('<img src="{}">'.format(self.smile.url))
+    smile_preview.short_description = 'смайл'
