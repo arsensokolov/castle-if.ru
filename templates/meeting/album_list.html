@@ -1,0 +1,15 @@
+{% extends 'right_frame.html' %}
+{% block content %}
+    <p align="justify">
+        Посмотрите на фотографии встреч замка.
+    </p>
+    <ol>
+        {% for object in object_list %}
+            <li>
+                <a href="{% url 'photos' object.date.year object.date.month object.date.day %}" target="_blank">
+                    {{ object }}
+                </a>
+            </li>
+        {% endfor %}
+    </ol>
+{% endblock %}

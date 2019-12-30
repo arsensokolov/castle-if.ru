@@ -1,0 +1,141 @@
+- model: meeting.photo
+  pk: 1
+  fields:
+    album: 1
+    title: "\u043F\u0440\u043E\u0441\u0442\u043E \u043C\u044B"
+    image: meeting/1999/9/1/09020001.jpg
+    my_order: 1
+- model: meeting.photo
+  pk: 2
+  fields:
+    album: 1
+    title: "\u0415\u0432\u0430... \u0441 \u043D\u0435\u0435 \u0432\u0441\u0435 \u0438\
+      \ \u043D\u0430\u0447\u0430\u043B\u043E\u0441\u044C..."
+    image: meeting/1999/9/1/09020002.jpg
+    my_order: 2
+- model: meeting.photo
+  pk: 3
+  fields:
+    album: 1
+    title: "\u0442\u0438\u043F\u0430 - \u043F\u0440\u0438\u0432\u0435\u0442 \u0432\
+      \u0441\u0435\u043C"
+    image: meeting/1999/9/1/09020004.jpg
+    my_order: 3
+- model: meeting.photo
+  pk: 4
+  fields:
+    album: 1
+    title: "\u0430\u0432\u0442\u043E\u0433\u0440\u0430\u0444\u044B \u043F\u043E\u043A\
+      \u043B\u043E\u043D\u043D\u0438\u0446\u0430\u043C"
+    image: meeting/1999/9/1/09020006.jpg
+    my_order: 4
+- model: meeting.photo
+  pk: 5
+  fields:
+    album: 1
+    title: "\u043D\u0430 \u0448\u043F\u0438\u043B\u0435 \u0431\u044B\u043B\u043E \u043D\
+      \u0443 \u043E\u0447\u0435\u043D\u044C \u043C\u043D\u043E\u0433\u043E \u043D\u0430\
+      \u0440\u043E\u0434\u0443"
+    image: meeting/1999/9/1/09020007.jpg
+    my_order: 5
+- model: meeting.photo
+  pk: 6
+  fields:
+    album: 1
+    title: "\u0431\u0440\u0430\u0442\u0432\u0430 \u0441 \u0415-302"
+    image: meeting/1999/9/1/09020009.jpg
+    my_order: 6
+- model: meeting.photo
+  pk: 7
+  fields:
+    album: 1
+    title: "\u043D\u0443 \u0432\u043E\u0442... \u043D\u0430\u0447\u0430\u043B\u043E\
+      \u0441\u044C..."
+    image: meeting/1999/9/1/09020010.jpg
+    my_order: 7
+- model: meeting.photo
+  pk: 8
+  fields:
+    album: 1
+    title: "\u041C\u0438\u043B\u0435\u0434\u0438 \u0432 \u0446\u0435\u043D\u0442\u0440\
+      \u0435 \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u044F"
+    image: meeting/1999/9/1/09020011.jpg
+    my_order: 8
+- model: meeting.photo
+  pk: 9
+  fields:
+    album: 1
+    title: null
+    image: meeting/1999/9/1/09020012.jpg
+    my_order: 9
+- model: meeting.photo
+  pk: 10
+  fields:
+    album: 1
+    title: "\u0410\u043D\u0443\u0431\u0438\u0441 - \u0434\u0443\u0448\u0430 \u043A\
+      \u043E\u043C\u043F\u0430\u043D\u0438\u0438"
+    image: meeting/1999/9/1/09020014.jpg
+    my_order: 10
+- model: meeting.photo
+  pk: 11
+  fields:
+    album: 1
+    title: "\u0413\u043B\u0430\u0432\u043D\u043E\u0435 \u043D\u0435 \u0443\u0440\u043E\
+      \u043D\u0438\u0442\u044C \u0415\u0432\u0430\u043D\u0433\u0435\u043B\u0438\u043D\
+      \u0443!!!"
+    image: meeting/1999/9/1/09020016.jpg
+    my_order: 11
+- model: meeting.photo
+  pk: 12
+  fields:
+    album: 1
+    title: "\u0410\u043D\u0442\u043E\u0445\u0430, \u043D\u0443 \u043A\u0430\u043A\
+      \ \u0442\u0435\u0431\u0435 \u043D\u0435 \u0441\u0442\u044B\u0434\u043D\u043E\
+      !!!"
+    image: meeting/1999/9/1/09020017.jpg
+    my_order: 12
+- model: meeting.photo
+  pk: 13
+  fields:
+    album: 1
+    title: "\u041D\u0443 \u0447\u0442\u043E \u043F\u0440\u0438\u0448\u0435\u043B?\
+      \ \u0417\u0430\u043D\u044F\u0442\u044B \u043C\u044B!"
+    image: meeting/1999/9/1/09020018.jpg
+    my_order: 13
+- model: meeting.photo
+  pk: 14
+  fields:
+    album: 1
+    title: "Ledon - \u0442\u0440\u0435\u0437\u0432\u0435\u043D\u043D\u0438\u043A \u0438\
+      \ ..."
+    image: meeting/1999/9/1/09020019.jpg
+    my_order: 14
+- model: meeting.photo
+  pk: 15
+  fields:
+    album: 1
+    title: "\u043D\u0430\u0434\u043E\u0435\u043B \u0442\u044B \u0441\u043E \u0441\u0432\
+      \u043E\u0438\u043C \u0444\u043E\u0442\u0438\u043A\u043E\u043C"
+    image: meeting/1999/9/1/09020020.jpg
+    my_order: 15
+- model: meeting.photo
+  pk: 16
+  fields:
+    album: 1
+    title: "\u041E\u0431\u0430-\u043D\u0430"
+    image: meeting/1999/9/1/09020023.jpg
+    my_order: 16
+- model: meeting.photo
+  pk: 17
+  fields:
+    album: 1
+    title: "\u0438 \u0434\u0430\u0436\u0435 \u043D\u0435 \u043F\u0440\u043E\u0441\u0438"
+    image: meeting/1999/9/1/09020027.jpg
+    my_order: 17
+- model: meeting.photo
+  pk: 18
+  fields:
+    album: 1
+    title: "\u0421\u0435\u0440\u044B\u0439 \u0410\u043D\u0433\u0435\u043B"
+    image: meeting/1999/9/1/09020029.jpg
+    my_order: 18

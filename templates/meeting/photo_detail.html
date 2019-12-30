@@ -1,0 +1,73 @@
+{% load static %}
+<html>
+<body bgcolor="#000000" text="#b8826d" link="#ffff00" vlink="#8A543F" alink="#ffffff">
+<center>
+    <img src="{% static 'images/castle.gif' %}"><br><br>
+    <font size="2"><b><i>ВСТРЕЧИ ЗАМКА</i></b>
+        <br><br>
+    </font>
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                {% if prev_photo %}
+                    <a href="{% url 'photo' prev_photo.id %}"><img
+                            src="{% static 'images/w_left.gif' %}" border="0"></a>
+                {% endif %}
+            </td>
+            <td>
+                <font size="2">{{ object.title }}</font>
+            </td>
+            <td>
+                {% if next_photo %}
+                    <a href="{% url 'photo' next_photo.id %}"><img
+                            src="{% static 'images/w_right.gif' %}" border="0"></a>
+                {% endif %}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table border="1">
+        <tbody>
+        <tr>
+            <td>
+                <img src="{{ object.image.url }}">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <form method="GET">
+        <select name="pk">
+            {% for photo in photo_list %}
+                <option value="{{ photo.id }}"{% if photo.id == object.id %} selected{% endif %}>{{ photo }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    {% if prev_photo %}
+                    <a href="{% url 'photo' prev_photo.id %}"><img
+                            src="{% static 'images/w_left.gif' %}" border="0"></a>
+                    {% endif %}
+                </td>
+                <td><input type="image" src="{% static 'images/w_enter.gif' %}"
+                           value="Send" border="0"></td>
+                <td>
+                    {% if next_photo %}
+                    <a href="{% url 'photo' next_photo.id %}"><img
+                            src="{% static 'images/w_right.gif' %}" border="0"></a>
+                    {% endif %}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    <i><font color="gray">
+        {% if request.is_secure %}https://{% else %}
+            http://{% endif %}{{ request.get_host }}{{ object.image.url }}
+    </font></i>
+</center>
+</body>
+</html>
