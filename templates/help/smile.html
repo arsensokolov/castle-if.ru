@@ -1,0 +1,36 @@
+{% extends 'right_frame.html' %}
+{% block content %}
+    <font size="1"><a href="{% url 'help' %}">помощь</a>/смайлы</font>
+    <br>
+    <p align="justify">
+        Смайлы, а точнее комбинации символов, обозначающих эмоции или предметы, стали "коньком" нашего чата. То есть,
+        конечно не символы шрифта, а те картинки, на которые их заменяет чат.
+    </p>
+    <p align="justify">
+        Учтите, что смайлы можно увидеть только тогда, когда у вас в настройках включена опция "Показывать смайлы" и вы
+        при вводе не ошиблись, спутав символ или вставив лишний пробел.
+    </p>
+    <p align="justify">
+        Первые смайлы мы рисовали сами, а после те из заключенных, кому нехватало того или иного смайла присылали их нам
+        сами.
+    </p>
+    <p align="justify">
+        Ниже приведены известные комбинации символов.
+    </p>
+    <table border="0" cellpadding="1" cellspacing="0" style="font-family: Verdana, Arial; font-size: 10px;">
+        <tbody>
+        {% for smile in smiles %}
+            {% if not forloop.counter|divisibleby:2 %}
+                <tr>
+            {% endif %}
+            <td>{{ smile.code }}</td>
+            <td>
+                <img src="{{ smile.smile.url }}">
+            </td>
+            {% if forloop.counter|divisibleby:2 %}
+                </tr>
+            {% endif %}
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

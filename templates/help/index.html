@@ -1,0 +1,12 @@
+{% extends 'right_frame.html' %}
+{% block content %}
+    <ul>
+        <li><a href="{% url 'help' 'chat' %}">Чат "Замок ИФ".</a></li>
+        <li><a href="{% url 'help' 'smile' %}">Смайлы.</a></li>
+        <li><a href="{% url 'help' 'vozm' %}">Возможности.</a></li>
+        <li><a href="{% url 'help' 'enc' %}">Перекодировка.</a></li>
+        <li><a href="{% url 'help' 'menu' %}">Меню.</a></li>
+        <li><a href="{% url 'help' 'rooms' %}">Камеры.</a></li>
+        <li><a href="{% url 'help' 'faq' %}">Часто задаваемые вопросы.</a></li>
+    </ul>
+{% endblock %}
