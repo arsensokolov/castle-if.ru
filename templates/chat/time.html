@@ -7,8 +7,13 @@
 <body text="#b8826d" vlink="#8a543f" alink="#ffffff" link="#ffff00" bgcolor="#000000"
       background="{% static 'images/bg_time.gif' %}" marginwidth="0" marginheight="0">
 <center>
-    <font size="2"><b>{{ request.room.name }} камера, сейчас: {% now 'l, j F Y G:i' %}</b></font>
+    {% now 'l' as week %}
+    <font size="2">&nbsp; {% now 'j E Y' %} года, {{ week|lower }} {% now 'G:i' %}&nbsp;&nbsp;&nbsp;&nbsp;
+        <b>
+            <a href="#">&lt;&lt;&lt</a>
+            <a href="#">&gt;&gt;&gt;</a>
+        </b>
+    </font>
 </center>
-
 </body>
 </html>
