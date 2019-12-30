@@ -1,0 +1,486 @@
+- model: chat.smile
+  pk: 1
+  fields:
+    code: ':)'
+    smile: smile/m_smile.gif
+    my_order: 1
+- model: chat.smile
+  pk: 2
+  fields:
+    code: '*:)'
+    smile: smile/z_smile.gif
+    my_order: 2
+- model: chat.smile
+  pk: 3
+  fields:
+    code: ':('
+    smile: smile/m_obida.gif
+    my_order: 3
+- model: chat.smile
+  pk: 4
+  fields:
+    code: '*:('
+    smile: smile/z_obida.gif
+    my_order: 4
+- model: chat.smile
+  pk: 5
+  fields:
+    code: :|
+    smile: smile/m_bezr.gif
+    my_order: 5
+- model: chat.smile
+  pk: 6
+  fields:
+    code: '*:|'
+    smile: smile/z_bezr.gif
+    my_order: 6
+- model: chat.smile
+  pk: 7
+  fields:
+    code: ':/'
+    smile: smile/m_krivo.gif
+    my_order: 7
+- model: chat.smile
+  pk: 8
+  fields:
+    code: '*:/'
+    smile: smile/z_krivo.gif
+    my_order: 8
+- model: chat.smile
+  pk: 9
+  fields:
+    code: ':0'
+    smile: smile/m_udivl.gif
+    my_order: 9
+- model: chat.smile
+  pk: 10
+  fields:
+    code: '*:0'
+    smile: smile/z_udivl.gif
+    my_order: 10
+- model: chat.smile
+  pk: 11
+  fields:
+    code: ':}'
+    smile: smile/m_smu.gif
+    my_order: 11
+- model: chat.smile
+  pk: 12
+  fields:
+    code: '*:}'
+    smile: smile/z_smu.gif
+    my_order: 12
+- model: chat.smile
+  pk: 13
+  fields:
+    code: ';)'
+    smile: smile/m_mig.gif
+    my_order: 13
+- model: chat.smile
+  pk: 14
+  fields:
+    code: '*;)'
+    smile: smile/z_mig.gif
+    my_order: 14
+- model: chat.smile
+  pk: 15
+  fields:
+    code: '/:'
+    smile: smile/udivlenie_m1.gif
+    my_order: 15
+- model: chat.smile
+  pk: 16
+  fields:
+    code: '*/:'
+    smile: smile/udivlenie_w21.gif
+    my_order: 16
+- model: chat.smile
+  pk: 17
+  fields:
+    code: ':]'
+    smile: smile/skull.gif
+    my_order: 17
+- model: chat.smile
+  pk: 18
+  fields:
+    code: 'mouse'
+    smile: smile/mous.gif
+    my_order: 18
+- model: chat.smile
+  pk: 19
+  fields:
+    code: '^_^'
+    smile: smile/cat1.gif
+    my_order: 19
+- model: chat.smile
+  pk: 20
+  fields:
+    code: 'slonik'
+    smile: smile/slon.gif
+    my_order: 20
+- model: chat.smile
+  pk: 21
+  fields:
+    code: 'stop'
+    smile: smile/sop.gif
+    my_order: 21
+- model: chat.smile
+  pk: 22
+  fields:
+    code: '*--'
+    smile: smile/cvetk.gif
+    my_order: 22
+- model: chat.smile
+  pk: 23
+  fields:
+    code: '@--'
+    smile: smile/rose.gif
+    my_order: 23
+- model: chat.smile
+  pk: 24
+  fields:
+    code: '$--'
+    smile: smile/rrose.gif
+    my_order: 24
+- model: chat.smile
+  pk: 25
+  fields:
+    code: 'buketik'
+    smile: smile/buket.gif
+    my_order: 25
+- model: chat.smile
+  pk: 26
+  fields:
+    code: '\!/'
+    smile: smile/buketik.gif
+    my_order: 26
+- model: chat.smile
+  pk: 27
+  fields:
+    code: '|_|'
+    smile: smile/palcy.gif
+    my_order: 27
+- model: chat.smile
+  pk: 28
+  fields:
+    code: 'чмок'
+    smile: smile/gubi.gif
+    my_order: 28
+- model: chat.smile
+  pk: 29
+  fields:
+    code: '-v-'
+    smile: smile/yazik.gif
+    my_order: 29
+- model: chat.smile
+  pk: 30
+  fields:
+    code: '()'
+    smile: smile/heart.gif
+    my_order: 30
+- model: chat.smile
+  pk: 31
+  fields:
+    code: 'ппп'
+    smile: smile/zuby.gif
+    my_order: 31
+- model: chat.smile
+  pk: 32
+  fields:
+    code: 'дпп'
+    smile: smile/ch.gif
+    my_order: 32
+- model: chat.smile
+  pk: 33
+  fields:
+    code: '0-0'
+    smile: smile/glaza.gif
+    my_order: 33
+- model: chat.smile
+  pk: 34
+  fields:
+    code: '|~'
+    smile: smile/sves.gif
+    my_order: 34
+- model: chat.smile
+  pk: 35
+  fields:
+    code: 'см-см'
+    smile: smile/glaza3.gif
+    my_order: 35
+- model: chat.smile
+  pk: 36
+  fields:
+    code: '0-{'
+    smile: smile/ryba.gif
+    my_order: 36
+- model: chat.smile
+  pk: 37
+  fields:
+    code: '(|='
+    smile: smile/gryb.gif
+    my_order: 37
+- model: chat.smile
+  pk: 38
+  fields:
+    code: 'окорок'
+    smile: smile/okorok.gif
+    my_order: 38
+- model: chat.smile
+  pk: 39
+  fields:
+    code: 'огурец'
+    smile: smile/ogurec.gif
+    my_order: 39
+- model: chat.smile
+  pk: 40
+  fields:
+    code: '=-='
+    smile: smile/kanfeta.gif
+    my_order: 40
+- model: chat.smile
+  pk: 41
+  fields:
+    code: 'тыблако'
+    smile: smile/apple.gif
+    my_order: 41
+- model: chat.smile
+  pk: 42
+  fields:
+    code: 'iiiIIIiii'
+    smile: smile/tort_ss.gif
+    my_order: 42
+- model: chat.smile
+  pk: 43
+  fields:
+    code: '_/'
+    smile: smile/kruzka.gif
+    my_order: 43
+- model: chat.smile
+  pk: 44
+  fields:
+    code: '-='
+    smile: smile/butil.gif
+    my_order: 44
+- model: chat.smile
+  pk: 45
+  fields:
+    code: '}-|'
+    smile: smile/bocal.gif
+    my_order: 45
+- model: chat.smile
+  pk: 46
+  fields:
+    code: 'CAFE'
+    smile: smile/coffee.gif
+    my_order: 46
+- model: chat.smile
+  pk: 47
+  fields:
+    code: '=~'
+    smile: smile/cigarete.gif
+    my_order: 47
+- model: chat.smile
+  pk: 48
+  fields:
+    code: ']~'
+    smile: smile/zazig.gif
+    my_order: 48
+- model: chat.smile
+  pk: 49
+  fields:
+    code: '[]='
+    smile: smile/paska1.gif
+    my_order: 49
+- model: chat.smile
+  pk: 50
+  fields:
+    code: 'ДМ'
+    smile: smile/dm.gif
+    my_order: 50
+- model: chat.smile
+  pk: 51
+  fields:
+    code: 'елка'
+    smile: smile/elka.gif
+    my_order: 51
+- model: chat.smile
+  pk: 52
+  fields:
+    code: '*'
+    smile: smile/gama.gif
+    my_order: 52
+- model: chat.smile
+  pk: 53
+  fields:
+    code: '-*'
+    smile: smile/shashka.gif
+    my_order: 53
+- model: chat.smile
+  pk: 54
+  fields:
+    code: 'рулез'
+    smile: smile/rulez1.gif
+    my_order: 54
+- model: chat.smile
+  pk: 55
+  fields:
+    code: 'сакс'
+    smile: smile/sux1.gif
+    my_order: 55
+- model: chat.smile
+  pk: 56
+  fields:
+    code: '=__'
+    smile: smile/krok!!!.gif
+    my_order: 56
+- model: chat.smile
+  pk: 57
+  fields:
+    code: 'о|'
+    smile: smile/notki.gif
+    my_order: 57
+- model: chat.smile
+  pk: 58
+  fields:
+    code: 'zaic'
+    smile: smile/zai.gif
+    my_order: 58
+- model: chat.smile
+  pk: 59
+  fields:
+    code: 'бабочка'
+    smile: smile/bf.gif
+    my_order: 59
+- model: chat.smile
+  pk: 60
+  fields:
+    code: 'бах'
+    smile: smile/boom.gif
+    my_order: 60
+- model: chat.smile
+  pk: 61
+  fields:
+    code: 'хрум'
+    smile: smile/morkov.gif
+    my_order: 61
+- model: chat.smile
+  pk: 62
+  fields:
+    code: 'бенладен'
+    smile: smile/terror.gif
+    my_order: 62
+- model: chat.smile
+  pk: 63
+  fields:
+    code: 'зонтик'
+    smile: smile/zont.gif
+    my_order: 63
+- model: chat.smile
+  pk: 64
+  fields:
+    code: 'pepsi'
+    smile: smile/peps.gif
+    my_order: 64
+- model: chat.smile
+  pk: 65
+  fields:
+    code: 'рыбка'
+    smile: smile/fish.gif
+    my_order: 65
+- model: chat.smile
+  pk: 66
+  fields:
+    code: 'домой'
+    smile: smile/house.gif
+    my_order: 66
+- model: chat.smile
+  pk: 67
+  fields:
+    code: 'ice'
+    smile: smile/moroz.gif
+    my_order: 67
+- model: chat.smile
+  pk: 68
+  fields:
+    code: 'курица'
+    smile: smile/kuku.gif
+    my_order: 68
+- model: chat.smile
+  pk: 69
+  fields:
+    code: 'жаба'
+    smile: smile/zaba.gif
+    my_order: 69
+- model: chat.smile
+  pk: 70
+  fields:
+    code: 'бла-бла'
+    smile: smile/morda.gif
+    my_order: 70
+- model: chat.smile
+  pk: 71
+  fields:
+    code: '(*)'
+    smile: smile/snow.gif
+    my_order: 71
+- model: chat.smile
+  pk: 72
+  fields:
+    code: 'банан'
+    smile: smile/banana.gif
+    my_order: 72
+- model: chat.smile
+  pk: 73
+  fields:
+    code: 'хрюша'
+    smile: smile/hryak.gif
+    my_order: 73
+- model: chat.smile
+  pk: 74
+  fields:
+    code: 'дзинь'
+    smile: smile/kol.gif
+    my_order: 74
+- model: chat.smile
+  pk: 75
+  fields:
+    code: 'внимание'
+    smile: smile/icon4.gif
+    my_order: 75
+- model: chat.smile
+  pk: 76
+  fields:
+    code: 'котик'
+    smile: smile/cat2.gif
+    my_order: 76
+- model: chat.smile
+  pk: 77
+  fields:
+    code: 'биби'
+    smile: smile/bibi.gif
+    my_order: 77
+- model: chat.smile
+  pk: 78
+  fields:
+    code: 'Оо.'
+    smile: smile/icman.gif
+    my_order: 78
+- model: chat.smile
+  pk: 79
+  fields:
+    code: 'кактус'
+    smile: smile/kaktus.gif
+    my_order: 79
+- model: chat.smile
+  pk: 80
+  fields:
+    code: 'мороженка'
+    smile: smile/moroz.gif
+    my_order: 80
+- model: chat.smile
+  pk: 81
+  fields:
+    code: '//=='
+    smile: smile/stvol!!!.gif
+    my_order: 81

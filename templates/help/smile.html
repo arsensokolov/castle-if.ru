@@ -27,7 +27,7 @@
             <td>
                 <img src="{{ smile.smile.url }}">
             </td>
-            {% if forloop.counter|divisibleby:2 %}
+            {% if forloop.counter|divisibleby:2 or forloop.last %}
                 </tr>
             {% endif %}
         {% endfor %}
