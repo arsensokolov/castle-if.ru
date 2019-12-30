@@ -13,6 +13,7 @@
             document.forms['message'].message.value = document.forms['message'].message.value + nick + ', ';
             document.forms['message'].message.focus();
         }
+
         function initial() {
             {% if form.non_field_errors %}alert('{{ form.non_field_errors|list_commas }}');{% endif %}
             {% if form.message.errors %}alert('{{ form.message.errors|list_commas }}');{% endif %}
@@ -22,6 +23,7 @@
                 window.parent.frames['message'].document.location.href = '{% url 'message' %}';
             {% endif %}
         }
+
         //-->
     </SCRIPT>
 </HEAD>
