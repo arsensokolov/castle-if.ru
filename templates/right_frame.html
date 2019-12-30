@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+{% block head-tag %}{% endblock %}
+{% block body-tag %}
+    <body bgcolor="#000000" text="#b8826d" link="#ffff00" vlink="#8A543F" alink="#ffffff"
+          background="{% static 'images/bg_right.gif' %}">
+{% endblock %}
+<center>
+    <font size="2">
+        <b><i>{{ title|upper }}</i></b>
+    </font>
+</center>
+<font size="2">
+    {% block content %}{% endblock %}
+</font>
+{% block script %}{% endblock %}
+</body>
+</html>

@@ -34,6 +34,7 @@ class RegisterPage(generic.CreateView):
 
 
 class OnlineUsers(generic.ListView):
+    extra_context = {'title': 'Список заключенных'}
     model = User
 
     def get_queryset(self):
