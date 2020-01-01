@@ -3,7 +3,4 @@ castle-if.ru {
     proxy / localhost:8000 {
         transparent
     }
-    tls {
-        dns cloudflare
-    }
 }
