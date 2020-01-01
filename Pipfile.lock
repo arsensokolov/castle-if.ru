@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "d92a8d4e7b714c15b7ab26a3e083ba23b9866e50ebcc5e44bded3db8e580aecf"
+            "sha256": "3c3bc5b54aad0ac4302d7c2ea7f3f0d485eda82e4006ce03b2ef59b6215f8cbf"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -23,6 +23,27 @@
             ],
             "version": "==3.2.3"
         },
+        "dj-database-url": {
+            "hashes": [
+                "sha256:4aeaeb1f573c74835b0686a2b46b85990571159ffc21aa57ecd4d1e1cb334163",
+                "sha256:851785365761ebe4994a921b433062309eb882fedd318e1b0fcecc607ed02da9"
+            ],
+            "version": "==0.5.0"
+        },
+        "dj-email-url": {
+            "hashes": [
+                "sha256:0362e390c17cc377f03bcbf6daf3f671797c929c1bf78a9f439d78f215ebe3fd",
+                "sha256:136ac43c7f29022130fc4769b4ca8b01cd1c39fedf1659c641c143808182a084"
+            ],
+            "version": "==0.2.0"
+        },
+        "dj-search-url": {
+            "hashes": [
+                "sha256:136addf3d2d192fef4bb407b0d31137ac942fc4892fbd457099b2f9dd4f92b77",
+                "sha256:424d1a5852500b3c118abfdd0e30b3e0016fe68e7ed27b8553a67afa20d4fb40"
+            ],
+            "version": "==0.1"
+        },
         "django": {
             "hashes": [
                 "sha256:315b11ea265dd15348d47f2cbb044ef71da2018f6e582fed875c889758e6f844",
@@ -38,12 +59,33 @@
             "index": "pypi",
             "version": "==0.7.5"
         },
+        "django-cache-url": {
+            "hashes": [
+                "sha256:235950e2d7cb16164082167c2974301e2f0fb2313d40bfacc9d24f5b09c3514b",
+                "sha256:964120787dc80e568a355385a3880a19f2f00219c251903956f3137d1583d097"
+            ],
+            "version": "==3.0.0"
+        },
         "django-colorfield": {
             "hashes": [
                 "sha256:663e527247719469aae155859cb4d2f8938f54c2c722e714f6370bece5e7a8d2"
             ],
             "index": "pypi",
             "version": "==0.1.15"
+        },
+        "django-configurations": {
+            "extras": [
+                "cache",
+                "database",
+                "email",
+                "search"
+            ],
+            "hashes": [
+                "sha256:0b93cb7042739e2d69cfc6fb81676bbd3cbb63ea19b02e8b681f4cad3a8aaf1b",
+                "sha256:9e3bcea1355ac50a4c9f854f751d214cb17e5f8adf18405a4488d0a1e8945915"
+            ],
+            "index": "pypi",
+            "version": "==2.2"
         },
         "djantimat": {
             "git": "git://github.com/arsensokolov/djantimat.git",
@@ -116,6 +158,13 @@
             ],
             "index": "pypi",
             "version": "==5.2"
+        },
+        "six": {
+            "hashes": [
+                "sha256:1f1b7d42e254082a9db6279deae68afb421ceba6158efa6131de7b3003ee93fd",
+                "sha256:30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66"
+            ],
+            "version": "==1.13.0"
         },
         "sqlparse": {
             "hashes": [

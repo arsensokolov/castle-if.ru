@@ -13,6 +13,7 @@ pyyaml = "*"
 djantimat = {git = "git://github.com/arsensokolov/djantimat.git"}
 gunicorn = "*"
 pillow = "*"
+django-configurations = {extras = ["cache", "database", "email", "search"],version = "*"}
 
 [requires]
 python_version = "3.7"
